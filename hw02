@@ -1,0 +1,13 @@
+Biao=[1,2,3,4,5,6,7,8,9,10]
+left=0
+right=len(Biao)-1
+a=int(input("请输入需要查找的数字："))
+while(left<=right):
+    mid=(left+right)//2
+    if(a<Biao[mid]):
+        right=mid-1
+    if(a>Biao[mid]):
+        left=mid+1
+    if(a==Biao[mid]):
+        print (mid)
+        break
